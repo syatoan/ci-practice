@@ -1,18 +1,10 @@
-name :test-ci
+name: test-ci
 
-on :push
+on: push
 
-jobs:
+jobs: 
  build:
-  runs-on:ubutu-latest
-  steps:
-   -name:メッセージ
-    run:echo "Hello BI"
-   -name:ファイル作成
-    run:touch test.txt
-   -name:ファイル書き込み
-    run echo "data" >test.txt
-   -name:内容確認
-    run:cat test.txt
-   -name:一覧表示
-    run:ls -l
+   runs-on: ubuntu-latest
+   steps:
+    - run: echo "Hello CI"
+ 
