@@ -8,7 +8,7 @@ jobs:
    steps:
     - name: メッセージ
       run: echo "Hello CI"
-      
+      run: echo "second run"
     - name: ファイル作成
       run: touch test.txt
       
