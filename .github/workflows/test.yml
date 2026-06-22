@@ -7,8 +7,10 @@ jobs:
    runs-on: ubuntu-latest
    steps:
     - name: メッセージ
-      run: echo "Hello CI"
-      run: echo "second run"
+      run: 
+        echo "Hello CI"
+        echo "second run"
+      
     - name: ファイル作成
       run: touch test.txt
       
