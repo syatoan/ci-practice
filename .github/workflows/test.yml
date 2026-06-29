@@ -1,7 +1,7 @@
 name: test-ci
 env: 
   MY_MESSAGE: "Hello Veriable"
-  MY_MESSAGE2: "Hello Veriable"
+  MY_MESSAGE2: "test"
 
   FILENAME: "sample.txt"
 on: push
@@ -15,7 +15,7 @@ jobs:
         echo $MY_MESSAGE
         echo "second run"
     - name: sample
-      run: echo $MESSAGE2 > $FILENAME
+      run: echo $MY_MESSAGE2 > $FILENAME
     - run: cat $FILENAME
     - name: ファイル作成
       run: touch test.txt
