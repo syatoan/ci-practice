@@ -1,7 +1,6 @@
 name: test-ci
-env:
-  MY_MESSAGE: "Hello Variable"
-
+env: 
+  MY_MESSAGE: "Hello Veriable"
 on: push
 
 jobs: 
@@ -10,7 +9,7 @@ jobs:
    steps:
     - name: メッセージ
       run: 
-        echo "$MY_MESSAGE"
+        echo $MY_MESSAGE
         echo "second run"
       
     - name: ファイル作成
