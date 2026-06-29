@@ -4,6 +4,7 @@ env:
   MY_MESSAGE2: "test"
 
   FILENAME: "sample.txt"
+  FILENAME2: "sample2.txt"
 on: push
 
 jobs: 
@@ -17,6 +18,8 @@ jobs:
     - name: sample
       run: echo $MY_MESSAGE2 > $FILENAME
     - run: cat $FILENAME
+    - run: echo $FILENAME2 > sample3
+    - run: cat $FILENAME2
     - name: ファイル作成
       run: touch test.txt
       
