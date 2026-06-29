@@ -10,7 +10,7 @@ jobs:
    steps:
     - name: メッセージ
       run: 
-        echo "$MY_MY_MESSAGE"
+        echo "$MY_MESSAGE"
         echo "second run"
       
     - name: ファイル作成
