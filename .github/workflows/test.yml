@@ -18,7 +18,7 @@ jobs:
     - name: sample
       run: echo $MY_MESSAGE2 > $FILENAME
     - run: cat $FILENAME
-    - run: echo $FILENAME2 > sample3
+    - run: echo  sample3 > $FILENAME2
     - run: cat $FILENAME2
     - name: ファイル作成
       run: touch test.txt
