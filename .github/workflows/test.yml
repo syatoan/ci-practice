@@ -17,9 +17,9 @@ jobs:
    steps:
     #
     # "エラー確認"
-    # - run: cat aaaaaaa.txt
+    # - run: cat aaaaaaa.txt 
+    # - run: abcdefg
     # 
-    - run: abcdefg
     - run: echo "開始"
     - if: env.MODE == 'prod'
       run: echo "開発環境です。"
