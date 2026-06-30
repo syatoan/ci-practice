@@ -15,7 +15,10 @@ jobs:
  build: 
    runs-on: ubuntu-latest
    steps:
-    - run: cat aaaaaaa.txt
+    #
+    # "エラー確認"
+    # - run: cat aaaaaaa.txt
+    # 
     - run: abcdefg
     - run: echo "開始"
     - if: env.MODE == 'prod'
